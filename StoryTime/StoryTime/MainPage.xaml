@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StoryTime.MainPage">
+    <ContentPage.BackgroundColor>
+       #85dc
+    </ContentPage.BackgroundColor>
+    <StackLayout>
+        <Frame BackgroundColor="#e8a87c" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Story Time!" HorizontalTextAlignment="Center" TextColor="#e27d60" FontSize="36"/>
+        </Frame>
+        <!--<Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->
+        <Frame BackgroundColor="#85dc"  CornerRadius="0">
+            <Button Text="Click to go to Story!" BackgroundColor="#c38d9e" Clicked="Button_Clicked"/>
+        </Frame>
+        <Grid>
+            <!--<Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+               
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+              
+            </Grid.ColumnDefinitions>-->
+
+            <Label Text="enter Main character name"  HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"  Grid.Row="0" Grid.Column="0"  BackgroundColor="#85dc" TextColor="#41b3a3"/>
+            <Entry Text=""   Grid.Row="0" Grid.Column="1" Placeholder="eg: Tom,Harry" x:Name="UserNameEntry"/>
+
+            <Label Text="enter the noun of the main character"  HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"  Grid.Row="1" Grid.Column="0"  BackgroundColor="#41b3a3"  TextColor="blue"/>
+            <Entry Text=""   Grid.Row="1" Grid.Column="1" Placeholder="eg:he,she" x:Name="mainNoun"/>
+           
+            <Label Text="enter main character's sibling's name"  HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"  Grid.Row="2" Grid.Column="0"  BackgroundColor="#85dc" TextColor="#41b3a3"/>
+            <Entry Text=""   Grid.Row="2" Grid.Column="1" Placeholder="eg:Tom,Harry" x:Name="sibName"/>
+
+            <Label Text="enter the sibling's relation with main character"  HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"  Grid.Row="3" Grid.Column="0"  BackgroundColor="#41b3a3"  TextColor="blue"/>
+            <Entry Text=""   Grid.Row="3" Grid.Column="1" Placeholder="eg:brother, sister" x:Name="sibType"/>
+           
+            <Label Text="enter a pet name"  HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"  Grid.Row="4" Grid.Column="0"  BackgroundColor="#85dc" TextColor="#41b3a3"/>
+            <Entry Text=""   Grid.Row="4" Grid.Column="1" Placeholder="eg:Peeta, Hermis" x:Name="petName"/>
+
+            <Label Text="enter a pet type"  HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"  Grid.Row="5" Grid.Column="0"   BackgroundColor="#41b3a3"  TextColor="blue"/>
+            <Entry Text=""   Grid.Row="5" Grid.Column="1" Placeholder="eg:cat,dog" x:Name="petType"/>
+
+          
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
