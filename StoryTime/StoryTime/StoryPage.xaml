@@ -7,9 +7,10 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Label Text="Sara opened her eyes. She had fallen asleep reading the book 'How to charm a fairy'. She slipped off the bed and walked towards the window.It was nightime. Sara turned and surveyed the room. It had the usual paraphernalia of open textbooks, games, breakfast cups and saucers. She took her half eaten plate of grapes and tossed it to the dustbin. She heard a scuffle near the door and opened it to find her pet Hermit, the frog, looking at her pitifully from the floor.She sighed. She had forgotten to feed it. Just how much time did I sleep? She wondered as she came downstairs to her kitchen. She could see that her brother Issac had been through the pack of cereals mom had carefully hidden away from his clumsy hands. She opened a drawer and found something unexpected in it: a ancient looking key. She took it out and studied it carefully. She had never seen anything like it in her house and she was pretty sure no one in her family owned it. Did mom buy it recently? She pondered, keeping it on the shelf and turning to get the cereal from the upper shelf. Suddenly she heard a voice behind her say: 'Did you miss me?' she turned around quickly and found a boy, about her age, smirking at her. 'Who are you?' she asked quietly, shifting her arm to reach the knife behind her. He had popped up unexpectedly and she was sure the doors were locked.He smiled and waved his hand. Sara saw that he had the key she had kept on the shelf in his hands. 'Im sure you have questions, but Sara, don't you think you should recognize me? I have been waiting for you for such a long time and now you are here!' he laughed out loud and in that moment, Sara took a chance and rushed out of the kitchen. But she tipped on the edge of carpet and fell down, knocking her head…." 
+            <Label 
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand"
+                   x:Name="txtStory"/>
            
         
         </StackLayout>

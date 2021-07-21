@@ -19,7 +19,16 @@ namespace StoryTime
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new StoryPage());
+            var data = new StoryModel
+            {
+                MainCharacter1 = UserNameEntry.Text,
+                MainCharacter1Noun = mainNoun.Text,
+                SiblingName = sibName.Text,
+                SiblingType = sibType.Text,
+                PetName = petName.Text,
+                PetType = petType.Text
+            };
+            await Navigation.PushAsync(new StoryPage(data));
         }
     }
 }
